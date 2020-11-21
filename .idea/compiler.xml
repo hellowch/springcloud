@@ -9,6 +9,7 @@
         <module name="springcloud-eureka-7001" />
         <module name="springcloud-common-config-3344" />
         <module name="springcloud-api" />
+        <module name="springcloud-provider" />
       </profile>
     </annotationProcessing>
   </component>

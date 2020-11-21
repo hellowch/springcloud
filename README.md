@@ -9,7 +9,25 @@
 
 ### 平台目录结构说明
 ```
-
+├─springcloud----------------------------父项目，公共依赖
+│  │
+│  ├─springcloud-eureka--------------------------微服务注册中心
+│  │
+│  │
+│  ├─springcloud-provider
+│  │  │
+│  │  │
+│  │  └─
+│  │
+│  ├─springcloud-provider-api
+│  │  │
+│  │  │
+│  │  └─
+│  │
+│  ├─springcloud-common
+│  │  │
+│  │  │
+│  │  └─springcloud-common-config------------------公共配置包
 ```
 
 ### 作者介绍
