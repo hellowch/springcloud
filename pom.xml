@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springcloud-common</module>
+        <module>springcloud-api</module>
+        <module>springcloud-eureka-7001</module>
     </modules>
 
 
