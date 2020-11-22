@@ -3,9 +3,11 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-api/springcloud-api-uac" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springcloud-common/springcloud-common-config-3344" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-common/springcloud-common-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider/springcloud-provider-uac" charset="UTF-8" />
   </component>
 </project>

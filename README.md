@@ -17,17 +17,17 @@
 │  ├─springcloud-provider
 │  │  │
 │  │  │
-│  │  └─
+│  │  └─springcloud-provider-uac------------------用户服务中心
 │  │
-│  ├─springcloud-provider-api
+│  ├─springcloud-api
 │  │  │
 │  │  │
-│  │  └─
+│  │  └─springcloud-api-uac-----------------------用户服务中心api
 │  │
 │  ├─springcloud-common
 │  │  │
 │  │  │
-│  │  └─springcloud-common-config------------------公共配置包
+│  │  └─springcloud-common-config-----------------公共配置包
 ```
 
 ### 作者介绍
