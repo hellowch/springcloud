@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="MysqlContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <!--指定生成的xxxMapper文件要继承的MyMapper类的路径-->
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.frame.springcloud.utils.MyMapper"/>
+        </plugin>
+        <!--连接数据库-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://weichenhao.cn:3310/DB01?useSSL=false"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <!-- 对应生成的pojo所在包 -->
+        <javaModelGenerator targetPackage="com.frame.springcloud.pojo"
+                            targetProject="./springcloud-api/springcloud-api-uac/src/main/java"/>
+
+        <!-- 对应生成的mapper所在目录 -->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="./springcloud-provider/springcloud-provider-uac/src/main/resources/mybatis"/>
+
+        <!-- 配置mapper对应的java映射 -->
+        <javaClientGenerator targetPackage="com.frame.springcloud.mapper"
+                             targetProject="./springcloud-provider/springcloud-provider-uac/src/main/java"
+                             type="XMLMAPPER"/>
+
+        <!--添加要生成的数据库对应表名-->
+        <table tableName="dept"></table>
+
+    </context>
+</generatorConfiguration>

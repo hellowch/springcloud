@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-eureka-7001" />
         <module name="springcloud-api-uac" />
+        <module name="springcloud-generator-uac" />
         <module name="springcloud-common-config" />
         <module name="springcloud-provider-uac" />
-        <module name="springcloud-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

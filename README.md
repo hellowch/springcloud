@@ -11,23 +11,29 @@
 ```
 ├─springcloud----------------------------父项目，公共依赖
 │  │
-│  ├─springcloud-eureka--------------------------微服务注册中心
+│  ├─springcloud-eureka----------------------- --微服务注册中心
 │  │
 │  │
 │  ├─springcloud-provider
 │  │  │
 │  │  │
-│  │  └─springcloud-provider-uac------------------用户服务中心
+│  │  └─springcloud-provider-uac-----------------用户服务中心
 │  │
 │  ├─springcloud-api
 │  │  │
 │  │  │
-│  │  └─springcloud-api-uac-----------------------用户服务中心api
+│  │  └─springcloud-api-uac----------------------用户服务中心api
 │  │
 │  ├─springcloud-common
 │  │  │
 │  │  │
-│  │  └─springcloud-common-config-----------------公共配置包
+│  │  └─springcloud-common-config--------- ------公共配置包
+│  │
+│  ├─paascloud-generator
+│  │  │
+│  │  │
+│  │  └─paascloud-generator-uac------------------数据服务中心Mybatis Generator
+
 ```
 
 ### 作者介绍

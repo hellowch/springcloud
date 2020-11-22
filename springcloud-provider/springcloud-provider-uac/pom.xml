@@ -38,7 +38,13 @@
         <!--配置api module拿到实体类-->
         <dependency>
             <groupId>com.springcloud</groupId>
-            <artifactId>springcloud-api</artifactId>
+            <artifactId>springcloud-api-uac</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--配置拿到MyMapper-->
+        <dependency>
+            <groupId>com.springcloud</groupId>
+            <artifactId>springcloud-generator-uac</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
