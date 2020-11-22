@@ -9,11 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-common</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>springcloud-common-config</module>
-    </modules>
+    <artifactId>springcloud-generator</artifactId>
 
 
 </project>
