@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-consumer-uac" />
         <module name="springcloud-api-uac" />
         <module name="springcloud-gateway" />
         <module name="springcloud-generator-uac" />

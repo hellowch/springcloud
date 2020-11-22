@@ -10,7 +10,7 @@ spring:
           enabled: true  # 开启从注册中心动态创建路由的功能，利用微服务名进行路由
       routes:
         - id: uac   # 路由的ID，没有固定规则，但要求唯一，建议配合服务名
-          uri: lb://SPRINGCLOUD-CONSUMER-UAC   #这里的名字必须和被访问的项目配置文件 的项目名一致 spring.application.name
+          uri: http://localhost:8011/   #这里的名字必须和被访问的项目配置文件 的项目名一致 spring.application.name
           predicates:
             - Path=/api/consumer/**  #访问 /api/thirdparty 这个路径就路由到
 #          filters:                    #路径重写 成一下 这里中间逗号， 前面是截取的路径，后面是替换的路径

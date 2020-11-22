@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: config-eureka   #想要从git上读取的资源名称
+      profile: dev
+      label: master
+      uri: http://localhost:3344
+

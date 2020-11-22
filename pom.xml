@@ -14,6 +14,7 @@
         <module>springcloud-provider</module>
         <module>springcloud-generator</module>
         <module>springcloud-gateway</module>
+        <module>springcloud-consumer</module>
     </modules>
 
 
