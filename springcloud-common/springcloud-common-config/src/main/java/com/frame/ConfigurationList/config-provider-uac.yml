@@ -14,7 +14,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name: springcloud-provider-dept
+    name: springcloud-provider-uac
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -47,7 +47,7 @@ mybatis:
 spring:
   profiles: test
   application:
-    name: springcloud-provider-dept
+    name: springcloud-provider-uac
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
