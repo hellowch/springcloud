@@ -13,6 +13,7 @@
 │  │
 │  ├─springcloud-eureka----------------------- --微服务注册中心
 │  │
+│  │─paascloud-gateway--------------------------微服务网关中心
 │  │
 │  ├─springcloud-provider
 │  │  │

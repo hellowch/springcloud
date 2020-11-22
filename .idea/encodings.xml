@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/springcloud-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-common/springcloud-common-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-generator/springcloud-generator-uac" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-provider" charset="UTF-8" />

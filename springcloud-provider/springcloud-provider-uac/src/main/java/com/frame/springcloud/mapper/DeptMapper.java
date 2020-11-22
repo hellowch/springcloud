@@ -1,7 +1,6 @@
 package com.frame.springcloud.mapper;
 
 import com.frame.springcloud.pojo.Dept;
-import com.frame.springcloud.utils.MyMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-eureka-7001" />
         <module name="springcloud-api-uac" />
+        <module name="springcloud-gateway" />
         <module name="springcloud-generator-uac" />
         <module name="springcloud-common-config" />
         <module name="springcloud-provider-uac" />
+        <module name="springcloud-eureka-7001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
