@@ -18,7 +18,7 @@
 │  ├─springcloud-provider
 │  │  │
 │  │  │
-│  │  └─springcloud-provider-uac-----------------用户服务中心
+│  │  └─springcloud-provider-uac-----------------用户服务中心提供者
 │  │
 │  ├─springcloud-api
 │  │  │
@@ -29,6 +29,11 @@
 │  │  │
 │  │  │
 │  │  └─springcloud-common-config--------- ------公共配置包
+│  │
+│  ├─springcloud-consumer
+│  │  │
+│  │  │
+│  │  └─springcloud-consumer-uac--------- ------用户服务中心消费者
 │  │
 │  ├─paascloud-generator
 │  │  │
