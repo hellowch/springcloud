@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>springcloud-provider-uac</module>
+        <module>springcloud-provider-uac2</module>
     </modules>
 
 
