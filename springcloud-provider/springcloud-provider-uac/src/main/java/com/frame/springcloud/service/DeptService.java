@@ -9,6 +9,7 @@ import java.util.List;
 
 @Service
 public class DeptService {
+
     @Autowired
     DeptMapper deptMapper;
 
@@ -18,4 +19,12 @@ public class DeptService {
     public List<Dept> queryAll() {
         return deptMapper.queryAll();
     }
+
+    /*
+    查询部门
+    */
+    public Dept queryById(Long id) {
+        return deptMapper.queryById(id);
+    }
+
 }

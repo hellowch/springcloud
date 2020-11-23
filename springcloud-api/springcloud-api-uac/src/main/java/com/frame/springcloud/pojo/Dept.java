@@ -15,8 +15,8 @@ public class Dept {
 
     private String dname;
 
-    @Column(name = "db_source")
-    private String dbSource;
+    //这个数据是在哪个数据库的字段，微服务一个服务对应一个数据库,同一个信息可能存在不同数据库
+    private String db_source;
 
     public Dept(String dname){
         this.dname=dname;

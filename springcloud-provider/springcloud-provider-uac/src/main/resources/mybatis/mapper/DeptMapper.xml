@@ -5,4 +5,8 @@
   <select id="queryAll" resultType="Dept" parameterType="Long">
         select * from DB01.dept;
     </select>
+
+    <select id="queryById" resultType="Dept" parameterType="Long">
+        select * from DB01.dept where deptno = #{deptno};
+    </select>
 </mapper>

@@ -17,4 +17,7 @@ public interface DeptClientService {
     @RequestMapping("/dept/list")
     public List<Dept> queryAll();
 
+    @RequestMapping("/dept/get/{id}")
+    public Dept queryById(@PathVariable("id") Long id);
+
 }

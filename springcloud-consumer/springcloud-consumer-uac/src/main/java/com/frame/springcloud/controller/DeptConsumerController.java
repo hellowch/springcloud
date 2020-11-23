@@ -3,6 +3,7 @@ package com.frame.springcloud.controller;
 import com.frame.springcloud.feign.DeptClientService;
 import com.frame.springcloud.pojo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,5 +19,10 @@ public class DeptConsumerController {
     @RequestMapping("/list")
     public List<Dept> list(){
         return this.deptClientService.queryAll();
+    }
+
+        @RequestMapping("/get/{id}")
+    public Dept get(@PathVariable("id") Long id){
+        return this.deptClientService.queryById(id);
     }
 }
