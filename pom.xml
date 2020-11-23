@@ -13,8 +13,8 @@
         <module>springcloud-eureka-7001</module>
         <module>springcloud-provider</module>
         <module>springcloud-generator</module>
-        <module>springcloud-gateway</module>
         <module>springcloud-consumer</module>
+        <module>springcloud-zuul</module>
     </modules>
 
 

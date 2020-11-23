@@ -13,7 +13,7 @@
 │  │
 │  ├─springcloud-eureka----------------------- --微服务注册中心
 │  │
-│  │─paascloud-gateway--------------------------微服务网关中心
+│  │─paascloud-zuul2.x--------------------------微服务网关中心
 │  │
 │  ├─springcloud-provider
 │  │  │
@@ -40,6 +40,12 @@
 │  │  │
 │  │  └─paascloud-generator-uac------------------数据服务中心Mybatis Generator
 
+```
+
+###使用说明
+```
+common-Config(配置中心) -> Eureka(注册中心) -> provider(服务提供者)
+-> consumer(消费者) -> Zuul(网关) 
 ```
 
 ### 作者介绍
