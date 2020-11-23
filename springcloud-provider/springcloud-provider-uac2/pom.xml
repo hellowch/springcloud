@@ -12,6 +12,11 @@
     <artifactId>springcloud-provider-uac2</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
         <!--hystrix服务熔断-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

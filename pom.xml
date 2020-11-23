@@ -15,6 +15,7 @@
         <module>springcloud-generator</module>
         <module>springcloud-consumer</module>
         <module>springcloud-zuul</module>
+        <module>springcloud-admin</module>
     </modules>
 
 

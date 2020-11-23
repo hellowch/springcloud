@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-generator-uac" />
         <module name="springcloud-api-uac" />
         <module name="springcloud-zuul" />
         <module name="springcloud-consumer-uac" />
-        <module name="springcloud-provider-uac2" />
+        <module name="springcloud-generator-uac" />
         <module name="springcloud-common-config" />
+        <module name="springcloud-admin" />
         <module name="springcloud-provider-uac" />
+        <module name="springcloud-provider-uac2" />
         <module name="springcloud-eureka-7001" />
       </profile>
     </annotationProcessing>

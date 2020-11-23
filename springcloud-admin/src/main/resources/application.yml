@@ -1,0 +1,19 @@
+#server:
+#  port: 8830
+#
+##Eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://eureka7001.com:7001/eureka/
+#  instance:
+#    instance-id: springcloud-admin-8830  #修改eureka上默认描述信息
+#
+#spring:
+#  application:
+#    name: springcloud-admin
+#
+##info配置
+#info:
+#  app.name: wch-springcloud
+#  company.name: blog.wchstudy.com
