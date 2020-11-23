@@ -13,7 +13,7 @@
 │  │
 │  ├─springcloud-eureka----------------------- --微服务注册中心
 │  │
-│  │─paascloud-zuul2.x--------------------------微服务网关中心
+│  │─springcloud-zuul2.x--------------------------微服务网关中心
 │  │
 │  ├─springcloud-provider
 │  │  │
