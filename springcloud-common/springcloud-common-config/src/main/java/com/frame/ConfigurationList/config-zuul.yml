@@ -20,6 +20,54 @@ eureka:
     instance-id: springcloud-zuul-9527  #修改eureka上默认描述信息
     prefer-ip-address: true
 
+#向admin展示详细信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+info:
+  app.name: springcloud-demo
+  company.name: blog.springcloud.com
+zuul:
+  routes:
+    uac.serviceId: springcloud-consumer-uac
+    uac.path: /uac/** #更改访问名为如上
+    uac2.serviceId: springcloud-provider-uac
+    uac2.path: /uac2/**
+  ignored-services: "*"  #不能再用默认名字访问,隐藏全部
+
+---
+spring:
+  profiles: test
+  application:
+    name: springcloud-zuul
+
+server:
+  port: 9527
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: springcloud-zuul-9527  #修改eureka上默认描述信息
+    prefer-ip-address: true
+
+#向admin展示详细信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
 info:
   app.name: springcloud-demo
   company.name: blog.springcloud.com

@@ -5,12 +5,7 @@ spring:
 
 ---
 server:
-  port: 8011
-
-#开启降级feign.hystrix
-feign:
-  hystrix:
-    enabled: true
+  port: 8830
 
 #Eureka
 eureka:
@@ -18,12 +13,12 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: springcloud-consumer-uac-8011  #修改eureka上默认描述信息
+    instance-id: springcloud-admin-8830  #修改eureka上默认描述信息
 
 spring:
   profiles: dev
   application:
-    name: springcloud-consumer-uac
+    name: springcloud-admin
 
 #info配置
 info:
@@ -41,23 +36,25 @@ management:
       show-details: ALWAYS
 ---
 server:
-  port: 8011
-
-#开启降级feign.hystrix
-feign:
-  hystrix:
-    enabled: true
+  port: 8830
 
 #Eureka
 eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: springcloud-admin-8830  #修改eureka上默认描述信息
 
 spring:
   profiles: test
   application:
-    name: springcloud-consumer-uac
+    name: springcloud-admin
+
+#info配置
+info:
+  app.name: wch-springcloud
+  company.name: blog.wchstudy.com
 
 #向admin展示详细信息
 management:

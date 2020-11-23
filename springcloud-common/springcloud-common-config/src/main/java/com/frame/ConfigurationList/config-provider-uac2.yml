@@ -4,7 +4,7 @@ spring:
 
 ---
 server:
-  port: 8001
+  port: 8002
 
 mybatis:
   type-aliases-package: com.frame.springcloud.pojo
@@ -18,7 +18,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://weichenhao.cn:3310/DB01?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://weichenhao.cn:3310/DB02?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
 
@@ -28,7 +28,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: springcloud-provider-uac-8001  #修改eureka上默认描述信息
+    instance-id: springcloud-provider-uac-8002  #修改eureka上默认描述信息
 
 #info配置
 info:
@@ -47,7 +47,7 @@ management:
 
 ---
 server:
-  port: 8001
+  port: 8002
 
 mybatis:
   type-aliases-package: com.frame.springcloud.pojo
@@ -61,7 +61,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://weichenhao.cn:3310/DB01?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://weichenhao.cn:3310/DB02?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
 
@@ -71,7 +71,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: springcloud-provider-uac-8001  #修改eureka上默认描述信息
+    instance-id: springcloud-provider-uac-8002  #修改eureka上默认描述信息
 
 #info配置
 info:
