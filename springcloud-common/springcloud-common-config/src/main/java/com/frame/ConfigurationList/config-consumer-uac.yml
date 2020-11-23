@@ -17,12 +17,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: springcloud-consumer-uac-8011  #修改eureka上默认描述信息
 
 spring:
   profiles: dev
   application:
     name: springcloud-consumer-uac
 
+#info配置
+info:
+  app.name: wch-springcloud
+  company.name: blog.wchstudy.com
 ---
 server:
   port: 8011
