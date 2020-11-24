@@ -21,7 +21,7 @@ public class DeptConsumerController {
         return this.deptClientService.queryAll();
     }
 
-        @RequestMapping("/get/{id}")
+    @RequestMapping("/get/{id}")
     public Dept get(@PathVariable("id") Long id){
         return this.deptClientService.queryById(id);
     }

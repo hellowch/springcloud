@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@EnableDiscoveryClient
+@EnableDiscoveryClient  //整合eureka的方案自动发现所有的注册过的服务
 @EnableAdminServer
 public class ServerAdminApplication {
 

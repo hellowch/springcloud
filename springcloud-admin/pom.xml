@@ -12,10 +12,12 @@
     <artifactId>springcloud-admin</artifactId>
 
     <dependencies>
+        <!--eureka-client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <!--admin-->
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-server</artifactId>
@@ -25,10 +27,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--config-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
             <version>2.1.1.RELEASE</version>
+        </dependency>
+        <!--admin-hystrix-dashboard-->
+        <dependency>
+            <groupId>nl.devillers</groupId>
+            <artifactId>spring-boot-admin-hystrix-dashboard</artifactId>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
 

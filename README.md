@@ -15,7 +15,7 @@
 │  │
 │  │─springcloud-zuul2.x------------------------微服务网关中心
 │  │
-│  │─springcloud-admin--------------------------微服务监控中心
+│  │─springcloud-admin+dashboard----------------微服务监控中心
 │  │
 │  ├─springcloud-provider
 │  │  │
@@ -44,10 +44,11 @@
 
 ```
 
-###使用说明
+
+### 使用说明
 
 ```
-common-Config(配置中心) -> Eureka(注册中心) -> provider(服务提供者)
+common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> provider(服务提供者)
 -> consumer(消费者) -> Zuul(网关) 
 ```
 
