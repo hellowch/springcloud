@@ -1,5 +1,5 @@
 ## Spring Cloud 实战项目
-（未完成）搭建自用springcloud脚手架
+（未完成）搭建自用springcloud脚手架，作者刚接触oauth部分，最近更新会慢一点55555
 
 ### 项目介绍
     核心框架：springcloud Hoxton.SR8全家桶
@@ -29,8 +29,9 @@
 │  │
 │  ├─springcloud-common
 │  │  │
+|  |  ├─springcloud-common-oauth2.0--------------公共安全认证
 │  │  │
-│  │  └─springcloud-common-config--------- ------公共配置包
+│  │  └─springcloud-common-config----------------公共配置包
 │  │
 │  ├─springcloud-consumer
 │  │  │

@@ -13,7 +13,7 @@
         </plugin>
         <!--连接数据库-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://weichenhao.cn:3310/DB01?useSSL=false"
+                        connectionURL="jdbc:mysql://weichenhao.cn:3310/springcloud?useSSL=false"
                         userId="root"
                         password="123456">
         </jdbcConnection>
@@ -32,7 +32,7 @@
                              type="XMLMAPPER"/>
 
         <!--添加要生成的数据库对应表名-->
-        <table tableName="dept"></table>
+        <table tableName="tb_user"></table>
 
     </context>
 </generatorConfiguration>
