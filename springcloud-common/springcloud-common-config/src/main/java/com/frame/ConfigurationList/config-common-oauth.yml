@@ -9,7 +9,7 @@ server:
     context-path: /uaa
 
 spring:
-    profiles: dev
+  profiles: dev
   application:
     name: springcloud-common-oauth2.0
   main:
