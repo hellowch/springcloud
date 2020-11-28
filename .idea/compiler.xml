@@ -18,12 +18,5 @@
         <module name="springcloud-eureka-7001" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="springcloud-common-config-3344" target="1.5" />
-      <module name="springcloud-common-oauth2" target="1.8" />
-      <module name="springcloud-common-security" target="1.8" />
-      <module name="springcloud-gateway" target="1.8" />
-      <module name="springcloud-test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

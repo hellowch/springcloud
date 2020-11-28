@@ -1,0 +1,96 @@
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 53020
+  servlet:
+    context-path: /uaa
+
+spring:
+  profiles: dev
+  application:
+    name: springcloud-common-oauth2.0
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://weichenhao.cn:3310/springcloud?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+#Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: springcloud-common-oauth2.0-53020  #修改eureka上默认描述信息
+
+
+#开启降级feign.hystrix
+feign:
+  hystrix:
+    enabled: true
+
+logging:
+  level:
+    root: debug
+
+#向admin展示详细信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+---
+server:
+  port: 53020
+  servlet:
+    context-path: /uaa
+
+spring:
+  profiles: test
+  application:
+    name: springcloud-common-oauth2.0
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://weichenhao.cn:3310/springcloud?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+#Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: springcloud-common-oauth2.0-53020  #修改eureka上默认描述信息
+
+
+#开启降级feign.hystrix
+feign:
+  hystrix:
+    enabled: true
+
+logging:
+  level:
+    root: debug
+
+#向admin展示详细信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
