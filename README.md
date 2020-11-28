@@ -63,3 +63,19 @@ common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> pr
     https://github.com/hollewch/springcloud
     
 ### 架构图
+
+
+### 接口
+
+```
+通过consumer访问provider的uac
+http://localhost:9527/uac/consumer/dept/list
+
+springcloud-common-oauth
+客户端模式:  http://127.0.0.1:53020/uaa/oauth/token   client_id:c1  client_secret"secret   grant_type:client_credentials
+密码模式:  http://127.0.0.1:53020/uaa/oauth/token  client_id:c1  client_secret"secret   grant_type:password username:zhangsan password:123
+校验令牌:  http://127.0.0.1:53020/uaa/oauth/check_token?token=....
+
+
+
+```

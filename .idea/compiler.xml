@@ -10,6 +10,7 @@
         <module name="springcloud-api-uac" />
         <module name="springcloud-zuul" />
         <module name="springcloud-consumer-uac" />
+        <module name="springcloud-provider-uac3" />
         <module name="springcloud-generator-uac" />
         <module name="springcloud-common-config" />
         <module name="springcloud-admin" />
