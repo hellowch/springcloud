@@ -42,9 +42,8 @@ public class CodeGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-//        final String projectPath = System.getProperty("user.dir");  //根目录
-        final String projectPath = "/sprngcloud-generator/springcloud-generator-uac";
-
+        final String projectPath = "./springcloud-provider/springcloud-provider-uac";
+//        final String projectPath = "./springcloud-generator/springcloud-generator-uac";
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("wch");
         gc.setOpen(false);
@@ -77,7 +76,7 @@ public class CodeGenerator {
         // 如果模板引擎是 freemarker
         String templatePath = "/templates/mapper.xml.ftl";
         // 如果模板引擎是 velocity
-        // String templatePath = "/templates/mapper.xml.vm";
+//         String templatePath = "/templates/mapper.xml.vm";
 
         // 自定义输出配置
         List<FileOutConfig> focList = new ArrayList<FileOutConfig>();
