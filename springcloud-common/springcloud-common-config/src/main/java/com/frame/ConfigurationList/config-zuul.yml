@@ -39,6 +39,8 @@ zuul:
     uac.path: /uac/** #更改访问名为如上
     uac2.serviceId: springcloud-provider-uac
     uac2.path: /uac2/**
+    oauth.serviceId: springcloud-common-oauth2.0
+    oauth.path: /oauth/**
   ignored-services: "*"  #不能再用默认名字访问,隐藏全部
 
 ---
