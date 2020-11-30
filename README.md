@@ -72,9 +72,10 @@ common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> pr
 http://localhost:9527/uac/consumer/dept/list
 
 springcloud-common-oauth
-客户端模式:  http://127.0.0.1:53020/uaa/oauth/token   client_id:c1  client_secret"secret   grant_type:client_credentials
-密码模式:  http://127.0.0.1:53020/uaa/oauth/token  client_id:c1  client_secret"secret   grant_type:password username:zhangsan password:123
-校验令牌:  http://127.0.0.1:53020/uaa/oauth/check_token?token=....
+客户端模式:  http://localhost:53020/uaa/oauth/token   client_id:c1  client_secret"secret   grant_type:client_credentials
+密码模式:  http://localhost:53020/uaa/oauth/token  client_id:c1  client_secret"secret   grant_type:password username:zhangsan password:123
+通过网关:  http://localhost:9527/oauth/uaa/oauth/token
+校验令牌:  http://localhost:53020/uaa/oauth/check_token?token=....
 
 
 

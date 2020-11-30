@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -40,5 +41,14 @@ public class DeptController {
                 .setDeptno(id)
                 .setDname("id=>"+id+"没有对应的信息,null--@hystrix")
                 .setDbSource("no this database in mysql");
+    }
+
+    @GetMapping(value = "/r1")
+    public String r1(HttpServletRequest request){
+        //获取用户身份信息
+        //Spring框架借助ThreadLocal来保存和传递用户登录信息。我们通常是使用下面这段代码，来获取保存在ThreadLocal中的用户信息
+        String token = request.getHeader("Authorization"); //从头部信息中获取token
+        System.out.println(token);
+        return "访问资源1";
     }
 }

@@ -5,6 +5,7 @@ import com.frame.springcloud.pojo.Dept;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 //Hystrix的失败回调接口工厂
@@ -22,6 +23,10 @@ public class DeptClientServiceFallBackFactory implements FallbackFactory {
 
             public List<Dept> queryAll() {
                 return null;
+            }
+
+            public String r1(HttpServletRequest request) {
+                return "没有对应的信息，客户端提供降级信息，该服务关闭";
             }
 
         };

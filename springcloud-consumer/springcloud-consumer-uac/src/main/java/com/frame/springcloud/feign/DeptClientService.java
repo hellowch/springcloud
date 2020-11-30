@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 //fegin的负载均衡接口
@@ -20,4 +21,6 @@ public interface DeptClientService {
     @RequestMapping("/dept/get/{id}")
     public Dept queryById(@PathVariable("id") Long id);
 
+    @RequestMapping("/dept/r1")
+    public String r1(HttpServletRequest request);
 }

@@ -1,23 +1,27 @@
 package com.frame.springcloud.controller;
 
 import com.frame.springcloud.pojo.Dept;
+import com.frame.springcloud.pojo.User;
 import com.frame.springcloud.service.DeptService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
 @RequestMapping("/dept")
 public class DeptController {
+
     @Autowired
-    private DeptService deptService;
+    public DeptService deptService;
 
 
     @GetMapping("/list")
@@ -42,5 +46,23 @@ public class DeptController {
                 .setDeptno(id)
                 .setDname("id=>"+id+"没有对应的信息,null--@hystrix")
                 .setDbSource("no this database in mysql");
+    }
+
+    @GetMapping(value = "/r1")
+    @PreAuthorize("hasAuthority('p1')")//拥有p1权限方可访问此url
+    public String r1(HttpServletRequest request){
+        //获取用户身份信息
+        //Spring框架借助ThreadLocal来保存和传递用户登录信息。我们通常是使用下面这段代码，来获取保存在ThreadLocal中的用户信息
+        String token = request.getHeader("Authorization"); //从头部信息中获取token
+        System.out.println(token);
+        return "访问资源1";
+    }
+
+    @GetMapping(value = "/r2")
+    @PreAuthorize("hasAuthority('p2')")//拥有p1权限方可访问此url
+    public String r2(){
+        //获取用户身份信息
+        //Spring框架借助ThreadLocal来保存和传递用户登录信息。我们通常是使用下面这段代码，来获取保存在ThreadLocal中的用户信息
+        return "访问资源1";
     }
 }

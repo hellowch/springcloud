@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -24,5 +25,10 @@ public class DeptConsumerController {
     @RequestMapping("/get/{id}")
     public Dept get(@PathVariable("id") Long id){
         return this.deptClientService.queryById(id);
+    }
+
+    @RequestMapping("/r1")
+    public String r1(HttpServletRequest request) {
+        return this.deptClientService.r1(request);
     }
 }
