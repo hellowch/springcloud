@@ -42,6 +42,8 @@ zuul:
     oauth.serviceId: springcloud-common-oauth2.0
     oauth.path: /oauth/**
   ignored-services: "*"  #不能再用默认名字访问,隐藏全部
+  sensitive-headers: Set-Cookie、Cookie、Host、Connection、Content-Length、Content-Encoding、Server、Transfer-Encoding、X-Application-Context、Authorization
+
 
 ---
 spring:
