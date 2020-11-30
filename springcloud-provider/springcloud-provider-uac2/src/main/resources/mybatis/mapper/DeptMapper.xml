@@ -4,11 +4,5 @@
 
 <mapper namespace="com.frame.springcloud.mapper.DeptMapper" >
 
-    <select id="queryAll" resultType="Dept" parameterType="Long">
-        select * from DB02.dept;
-    </select>
 
-    <select id="queryById" resultType="Dept" parameterType="Long">
-        select * from DB02.dept where deptno = #{deptno};
-    </select>
 </mapper>

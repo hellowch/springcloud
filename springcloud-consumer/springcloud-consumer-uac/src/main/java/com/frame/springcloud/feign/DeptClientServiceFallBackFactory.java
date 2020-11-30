@@ -17,7 +17,7 @@ public class DeptClientServiceFallBackFactory implements FallbackFactory {
                 return new Dept()
                         .setDeptno(id)
                         .setDname("id=>"+id+"没有对应的信息，客户端提供降级信息，该服务关闭")
-                        .setDb_source("没有数据");
+                        .setDbSource("没有数据");
             }
 
             public List<Dept> queryAll() {

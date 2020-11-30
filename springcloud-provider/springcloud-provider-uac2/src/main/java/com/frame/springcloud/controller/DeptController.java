@@ -39,6 +39,6 @@ public class DeptController {
         return new Dept()
                 .setDeptno(id)
                 .setDname("id=>"+id+"没有对应的信息,null--@hystrix")
-                .setDb_source("no this database in mysql");
+                .setDbSource("no this database in mysql");
     }
 }

@@ -1,23 +1,33 @@
 package com.frame.springcloud.pojo;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 
-import javax.persistence.*;
-
+/**
+ * 用户信息
+ */
 @Data
-@NoArgsConstructor
-@Accessors(chain = true) //链式写法
-@Table(name = "tb_user")
 public class User {
-    @Id
-    private Integer id;
 
+    /**
+     * 用户id
+     */
+    private String id;
+    /**
+     * 用户名
+     */
     private String username;
 
-    private String password;
+    /**
+     * 手机号
+     */
+    private String mobile;
 
-    private String avatar;
+    /**
+     * 姓名
+     */
+    private String fullname;
+
+
+
 
 }

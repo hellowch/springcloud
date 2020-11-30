@@ -5,6 +5,7 @@ import com.frame.springcloud.service.DeptService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,7 @@ public class DeptController {
     }
 
     @GetMapping("/get/{id}")
+    @PreAuthorize("hasAuthority('p1')")//拥有p1权限方可访问此url
     @HystrixCommand(fallbackMethod = "hystrixGet")
     public Dept get(@PathVariable("id") Long id){
         Dept dept = deptService.queryById(id);
@@ -39,6 +41,6 @@ public class DeptController {
         return new Dept()
                 .setDeptno(id)
                 .setDname("id=>"+id+"没有对应的信息,null--@hystrix")
-                .setDb_source("no this database in mysql");
+                .setDbSource("no this database in mysql");
     }
 }
