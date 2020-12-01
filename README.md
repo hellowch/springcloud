@@ -3,8 +3,8 @@
 
 ### 项目介绍
     核心框架：springcloud Hoxton.SR8全家桶
-    安全框架：Spring Security Spring Cloud Oauth2
-    持久层框架：MyBatis
+    安全框架：Spring Security Oauth2
+    持久层框架：MyBatis plus
     数据库连接池：Alibaba Druid
 
 ### 平台目录结构说明
@@ -49,8 +49,8 @@
 ### 使用说明
 
 ```
-common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> provider(服务提供者)
--> consumer(消费者) -> Zuul(网关) 
+common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> oauth(安全中心)
+-> provider(服务提供者)-> consumer(消费者) -> Zuul(网关) 
 ```
 
 ### 作者介绍
@@ -63,7 +63,10 @@ common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> pr
     https://github.com/hollewch/springcloud
     
 ### 架构图
-
+```
+在我们的安全架构中，zuul网关仅进行转播，登录时转发到oauth授权服务器获取token。访问资源时，
+带着token转发到consumer层进行安全验证，验证完毕后由consumer负载均衡转发到具体服务上。
+```
 
 ### 接口
 
@@ -77,6 +80,6 @@ springcloud-common-oauth
 通过网关:  http://localhost:9527/oauth/uaa/oauth/token
 校验令牌:  http://localhost:53020/uaa/oauth/check_token?token=....
 
-
+通过网关带token访问资源: http://localhost:9527/uac/consumer/dept/list   头部加入Authorization 格式Bearer eyJhb......
 
 ```

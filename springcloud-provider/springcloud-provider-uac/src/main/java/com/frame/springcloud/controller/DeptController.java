@@ -30,7 +30,6 @@ public class DeptController {
     }
 
     @GetMapping("/get/{id}")
-    @PreAuthorize("hasAuthority('p1')")//拥有p1权限方可访问此url
     @HystrixCommand(fallbackMethod = "hystrixGet")
     public Dept get(@PathVariable("id") Long id){
         Dept dept = deptService.queryById(id);
@@ -49,7 +48,6 @@ public class DeptController {
     }
 
     @GetMapping(value = "/r1")
-    @PreAuthorize("hasAuthority('p1')")//拥有p1权限方可访问此url
     public String r1(HttpServletRequest request){
         //获取用户身份信息
         //Spring框架借助ThreadLocal来保存和传递用户登录信息。我们通常是使用下面这段代码，来获取保存在ThreadLocal中的用户信息
@@ -59,7 +57,6 @@ public class DeptController {
     }
 
     @GetMapping(value = "/r2")
-    @PreAuthorize("hasAuthority('p2')")//拥有p1权限方可访问此url
     public String r2(){
         //获取用户身份信息
         //Spring框架借助ThreadLocal来保存和传递用户登录信息。我们通常是使用下面这段代码，来获取保存在ThreadLocal中的用户信息

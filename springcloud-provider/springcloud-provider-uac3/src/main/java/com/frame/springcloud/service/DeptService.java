@@ -17,14 +17,14 @@ public class DeptService {
     查询所有部门
     */
     public List<Dept> queryAll() {
-        return deptMapper.queryAll();
+        return deptMapper.selectList(null);
     }
 
     /*
     查询部门
     */
     public Dept queryById(Long id) {
-        return deptMapper.queryById(id);
+        return deptMapper.selectById(id);
     }
 
 }
