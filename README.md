@@ -63,9 +63,8 @@ common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> oa
     https://github.com/hollewch/springcloud
     
 ### 架构图
-```
+
 ![Image text](https://github.com/hellowch/springcloud-config/blob/main/images/%E6%88%91%E7%9A%84%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
-```
 
 ### 接口
 
