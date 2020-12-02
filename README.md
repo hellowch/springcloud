@@ -1,5 +1,5 @@
 ## Spring Cloud 实战项目
-（未完成）搭建自用springcloud脚手架，作者刚接触oauth部分，最近更新会慢一点55555
+（基础完成）搭建自用springcloud脚手架，完成部见详情，作者这两天去看看别人的脚手架学习一下，再继续修改。
 
 ### 项目介绍
     核心框架：springcloud Hoxton.SR8全家桶
@@ -64,8 +64,7 @@ common-Config(配置中心) -> Eureka(注册中心) -> Admin(监控中心) -> oa
     
 ### 架构图
 ```
-在我们的安全架构中，zuul网关仅进行转播，登录时转发到oauth授权服务器获取token。访问资源时，
-带着token转发到consumer层进行安全验证，验证完毕后由consumer负载均衡转发到具体服务上。
+![Image text](https://github.com/hellowch/springcloud-config/blob/main/images/%E6%88%91%E7%9A%84%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 ```
 
 ### 接口
